@@ -933,4 +933,153 @@ body.upside #particles-js{
 .shake {
   animation: screenShake 0.6s ease-in-out;
 }
+/* ================= MOBILE FRIENDLY DESIGN ================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 60px;
+  }
+
+  .hero h2 {
+    font-size: 35px;
+  }
+
+  .events-container,
+  .guidelines-content,
+  .prize-container,
+  .coordinator-container {
+    gap: 30px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 768px) {
+
+  /* Navbar */
+  nav {
+    padding: 10px 15px;
+  }
+
+  nav ul {
+    display: none; /* Hide menu on mobile */
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding-top: 120px;
+    height: auto;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+  }
+
+  .tech-gamma {
+    font-size: 18px;
+    letter-spacing: 3px;
+  }
+
+  .college {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .tagline {
+    font-size: 14px;
+  }
+
+  /* Buttons */
+  button {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  /* Event Cards */
+  .event-card {
+    width: 100%;
+  }
+
+  /* Guidelines Cards */
+  .guideline-box {
+    width: 100%;
+  }
+
+  .divider {
+    width: 100%;
+    height: 3px;
+    margin: 30px 0;
+  }
+
+  /* Timeline */
+  .timeline-vertical::before {
+    left: 10px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 40px;
+    text-align: left;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+  }
+
+  .timeline-item::before {
+    left: 0;
+  }
+
+  /* Podium */
+  .podium-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .podium-card {
+    width: 80%;
+    transform: none !important;
+  }
+
+  /* Prize Cards */
+  .prize-card {
+    width: 100%;
+  }
+
+  /* Coordinators */
+  .coordinator-card {
+    width: 100%;
+  }
+}
+
+/* Small Mobile (Very Small Phones) */
+@media (max-width: 480px) {
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero h2 {
+    font-size: 18px;
+  }
+
+  .events-title,
+  .guidelines-title,
+  .prizes-title,
+  .coordinator-title {
+    font-size: 28px;
+  }
+}
+
+
 
