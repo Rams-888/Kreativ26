@@ -1,0 +1,936 @@
+/* ================= RESET ================= */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+/* ================= BODY ================= */
+body{  
+  font-family: 'Cinzel', serif;
+  color:white;
+ 
+
+  
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  transition: background-image 1s ease-in-out, filter 1s ease;
+
+
+ 
+ 
+  overflow-x:hidden;
+}
+
+
+
+/* Dark Overlay */
+body::before{
+  content:"";
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: rgba(0,0,0,0.35);
+  z-index:-1;
+}
+
+/* ================= NAVBAR ================= */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:12px 40px;
+  position:fixed;
+  width:100%;
+  top:0;
+  background:black;
+  border-bottom:2px solid #e50914;
+  z-index:1000;
+}
+
+/* Logo */
+.logo{
+  font-family:'Nosifer', cursive;
+  font-size:22px;
+  color:#e50914;
+  text-shadow:0 0 10px red, 0 0 20px red;
+}
+
+/* Nav Links */
+nav ul{
+  list-style:none;
+  display:flex;
+}
+
+nav ul li{
+  margin-left:20px;
+}
+
+nav ul li a{
+  text-decoration:none;
+  color:white;
+  font-family: 'Cinzel', serif;   /* College name font */
+  font-size:15px;
+  font-weight:600;
+  letter-spacing:1px;
+  transition:0.3s;
+}
+
+
+nav ul li a:hover{
+  color:#e50914;
+}
+
+/* ================= HERO SECTION ================= */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding-top:80px;
+}
+
+/* Main Title */
+.hero h1{
+  font-family: 'ITC Benguiat', serif;
+  font-size: 90px;
+  color: #e50914;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow:
+    0 0 5px #e50914,
+    0 0 20px #e50914,
+    0 0 40px #e50914,
+    0 0 80px black;
+}
+
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px red, 0 0 30px red; }
+  to { text-shadow: 0 0 30px red, 0 0 80px red; }
+}
+
+/* TECH GAMMA */
+.tech-gamma{
+  font-family: 'Montserrat', sans-serif;
+  font-size:32px;
+  font-weight:800;
+  letter-spacing:6px;
+  color:white;
+  text-shadow:0 0 10px red;
+  margin-top:10px;
+}
+
+/* College Name */
+.college{
+  font-size:16px;
+  letter-spacing:3px;
+  color:#dddddd;
+  margin-top:10px;
+}
+
+/* Symposium Title */
+.hero h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size:50px;
+  font-weight:800;
+  color:white;
+  text-shadow:0 0 10px red, 0 0 30px red;
+  margin-top:30px;
+}
+
+/* Tagline */
+.tagline{
+  font-size:16px;
+  color:#cccccc;
+  margin-top:5px;
+}
+
+/* ================= BUTTONS ================= */
+button{
+  padding:12px 30px;
+  border-radius:30px;
+  border:none;
+  cursor:pointer;
+  font-size:14px;
+  margin:10px;
+  transition:0.3s;
+}
+
+.btn-outline{
+  background:transparent;
+  border:2px solid #e50914;
+  color:#e50914;
+}
+
+.btn-outline:hover{
+  background:#e50914;
+  color:white;
+}
+
+.btn-main{
+  background:#e50914;
+  color:white;
+  box-shadow:0 0 20px red;
+}
+
+.btn-main:hover{
+  box-shadow:0 0 40px red;
+}
+
+.btn-download{
+  background:black;
+  border:1px solid white;
+  color:white;
+}
+
+/* ================= EVENTS SECTION ================= */
+.events-section{
+  padding:100px 10%;
+  
+  text-align:center;
+}
+
+/* Events Title */
+.events-title{
+  font-family:'Nosifer', cursive;
+  font-size:45px;
+  color:#e50914;
+  text-shadow:0 0 20px red;
+  margin-bottom:50px;
+}
+
+/* Events Container */
+.events-container{
+  display:flex;
+  justify-content:center;
+  align-items:stretch;
+  gap:50px;
+  flex-wrap:wrap;
+  max-width:1200px;
+  margin:auto;
+}
+
+/* Event Cards */
+.event-card{
+  width:420px;
+  min-height:320px;
+  padding:30px;
+  border-radius:18px;
+  text-align:left;
+  color:white;
+  font-family: 'Montserrat', sans-serif;
+  background:black;
+  border:2px solid #222;
+  box-shadow:0 0 15px rgba(255,0,0,0.2);
+  transition:0.4s ease;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+
+/* Hover Effect */
+.event-card:hover{
+  background: linear-gradient(135deg, #ff0000, #8b0000);
+  border:2px solid red;
+  box-shadow:0 0 40px red;
+  transform:scale(1.05);
+}
+
+/* Event Title */
+.event-card h3{
+  font-size:26px;
+  margin-bottom:10px;
+  text-shadow:0 0 10px red;
+}
+
+/* Event Type */
+.event-type{
+  font-size:14px;
+  color:#cccccc;
+  margin-bottom:15px;
+}
+
+/* Event Text */
+.event-card p{
+  font-size:16px;
+  margin:6px 0;
+}
+
+/* Event Buttons */
+.event-card button{
+  display:block;
+  margin-top:12px;
+  padding:10px;
+  border-radius:8px;
+  border:1px solid white;
+  background:black;
+  color:white;
+  cursor:pointer;
+  font-size:14px;
+}
+
+.event-card:hover button{
+  background:#e50914;
+}
+
+/* ================= GUIDELINES SECTION ================= */
+
+.guidelines-section{
+  padding:100px 10%;
+
+  text-align:center;
+}
+
+/* Title */
+.guidelines-title{
+  font-family:'Nosifer', cursive;
+  font-size:45px;
+  color:#e50914;
+  text-shadow:0 0 20px red;
+  margin-bottom:80px;
+}
+
+/* Timeline Container */
+.timeline-vertical{
+  position:relative;
+  max-width:1000px;
+  margin:auto;
+}
+
+/* Center Line */
+.timeline-vertical::before{
+  content:"";
+  position:absolute;
+  left:50%;
+  top:0;
+  width:4px;
+  height:100%;
+  background:linear-gradient(red, darkred);
+  box-shadow:0 0 30px red;
+  transform:translateX(-50%);
+}
+
+/* Timeline Item */
+.timeline-item{
+  width:50%;
+  padding:20px 40px;
+  position:relative;
+}
+
+/* Left & Right */
+.timeline-item.left{
+  left:0;
+  text-align:right;
+}
+
+.timeline-item.right{
+  left:50%;
+  text-align:left;
+}
+
+/* Timeline Dot */
+.timeline-item::before{
+  content:"";
+  position:absolute;
+  top:30px;
+  width:18px;
+  height:18px;
+  background:#ff0000;
+  border-radius:50%;
+  box-shadow:0 0 20px red;
+  z-index:10;
+}
+
+.timeline-item.left::before{
+  right:-9px;
+}
+
+.timeline-item.right::before{
+  left:-9px;
+}
+
+/* Timeline Card */
+.timeline-content{
+  background:black;
+  padding:20px 25px;
+  border-radius:12px;
+  border:2px solid #e50914;
+  box-shadow:0 0 25px rgba(255,0,0,0.4);
+  transition:0.3s;
+}
+
+.timeline-content:hover{
+  background:linear-gradient(135deg,#ff0000,#5a0000);
+  transform:scale(1.07);
+}
+
+/* Time */
+.timeline-content span{
+  font-size:14px;
+  color:#ffb3b3;
+  display:block;
+  margin-bottom:6px;
+}
+
+/* Title */
+.timeline-content h3{
+  font-size:18px;
+  color:white;
+  text-shadow:0 0 10px red;
+}
+
+/* ================= PRIZES SECTION ================= */
+
+.prizes-section{
+  padding:100px 10%;
+ 
+  text-align:center;
+}
+
+/* Title */
+.prizes-title{
+  font-family:'Nosifer', cursive;
+  font-size:45px;
+  color:#e50914;
+  text-shadow:0 0 20px red;
+  margin-bottom:60px;
+}
+
+/* Prize Container */
+.prize-container{
+  display:flex;
+  justify-content:center;
+  gap:60px;
+  flex-wrap:wrap;
+}
+
+/* Prize Card */
+.prize-card{
+  width:350px;
+  padding:30px;
+  background:black;
+  border-radius:18px;
+  border:2px solid #222;
+  box-shadow:0 0 20px rgba(255,0,0,0.2);
+  color:white;
+  font-family:'Montserrat', sans-serif;
+  transition:0.4s ease;
+  text-align:center;
+}
+
+/* PODIUM CONTAINER */
+.podium-container{
+  display:flex;
+  justify-content:center;
+  align-items:flex-end;
+  gap:40px;
+  margin-top:50px;
+}
+
+/* COMMON PODIUM CARD */
+.podium-card{
+  width:220px;
+  background:black;
+  border-radius:20px;
+  padding:30px 20px;
+  text-align:center;
+  font-family:'Montserrat', sans-serif;
+  border:2px solid red;
+  box-shadow:0 0 25px red;
+  transition:0.3s;
+  position:relative;
+}
+
+/* Rank Text */
+.podium-card .rank{
+  font-size:14px;
+  color:#ccc;
+  letter-spacing:2px;
+  margin-bottom:10px;
+}
+
+/* Prize Amount */
+.podium-card h2{
+  font-size:36px;
+  color:white;
+  font-weight:800;
+  text-shadow:0 0 10px red;
+}
+
+/* 🥇 FIRST PLACE (CENTER BIGGER) */
+.podium-card.first{
+  height:280px;
+  transform:translateY(-40px);
+  box-shadow:0 0 60px red;
+  border:3px solid red;
+}
+
+/* 🥈 SECOND PLACE */
+.podium-card.second{
+  height:220px;
+}
+
+/* 🥉 THIRD PLACE */
+.podium-card.third{
+  height:200px;
+}
+
+/* Hover Effect */
+.podium-card:hover{
+  transform:scale(1.08);
+  box-shadow:0 0 80px red;
+}
+
+/* PODIUM BASE SHADOW */
+.podium-card::after{
+  content:"";
+  position:absolute;
+  bottom:-20px;
+  left:10%;
+  width:80%;
+  height:12px;
+  background:red;
+  filter:blur(15px);
+  opacity:0.6;
+}
+/* PODIUM HOVER RED EFFECT */
+.podium-card:hover{
+  background: linear-gradient(135deg, #ff0000, #600000);
+  border: 3px solid red;
+  box-shadow: 0 0 100px red;
+  transform: scale(1.1);
+}
+
+/* Make text brighter on hover */
+.podium-card:hover h2,
+.podium-card:hover .rank{
+  color: white;
+  text-shadow: 0 0 20px white, 0 0 40px red;
+}
+
+
+/* Hover Effect */
+.prize-card:hover{
+  background:linear-gradient(135deg,#ff0000,#600000);
+  border:2px solid red;
+  box-shadow:0 0 40px red;
+  transform:scale(1.08);
+}
+
+/* Prize Title */
+.prize-card h3{
+  font-size:22px;
+  text-shadow:0 0 10px red;
+  margin-bottom:10px;
+}
+
+/* Prize Text */
+.prize-card p{
+  font-size:15px;
+  color:#dddddd;
+}
+
+/* ================= UPSIDE DOWN MODE ================= */
+.upside{
+  transform: rotateX(180deg);
+}
+
+/* ================= PARTICLES BACKGROUND ================= */
+/* Particles hidden by default */
+#particles-js{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  display: none;
+}
+
+/* Show particles ONLY in upside mode */
+body.upside #particles-js{
+  display: block;
+}
+
+
+/* ================= MOBILE RESPONSIVE ================= */
+@media(max-width:900px){
+  .event-card{ width:100%; }
+  .prize-card{ width:100%; }
+}
+
+@media(max-width:768px){
+  .hero h1{font-size:45px;}
+  .hero h2{font-size:28px;}
+  .tech-gamma{font-size:20px;}
+  nav ul{display:none;}
+
+  /* Timeline Mobile */
+  .timeline-vertical::before{
+    left:10px;
+  }
+
+  .timeline-item{
+    width:100%;
+    padding-left:40px;
+    padding-right:0;
+    text-align:left;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right{
+    left:0;
+  }
+
+  .timeline-item::before{
+    left:0;
+  }
+}
+/* ================= GUIDELINES CARDS ================= */
+
+.guidelines-content{
+  display:flex;
+  justify-content:center;
+  align-items:stretch;
+  gap:60px;
+  max-width:1200px;
+  margin:80px auto 0;
+  flex-wrap:wrap;
+}
+
+/* Guideline Card */
+.guideline-box{
+  width:420px;
+  background:black;
+  padding:30px;
+  border-radius:18px;
+  border:2px solid #222;
+  box-shadow:0 0 20px rgba(255,0,0,0.2);
+  color:white;
+  font-family:'Montserrat', sans-serif;
+  transition:0.4s ease;
+  position:relative;
+  overflow:hidden;
+}
+
+/* Stranger Things Hover */
+.guideline-box:hover{
+  background:linear-gradient(135deg,#ff0000,#5a0000);
+  border:2px solid red;
+  box-shadow:0 0 50px red;
+  transform:scale(1.05);
+}
+
+/* Glowing Border Animation */
+.guideline-box::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:18px;
+  border:2px solid transparent;
+  box-shadow:0 0 25px red;
+  opacity:0.3;
+  animation:pulseGlow 3s infinite;
+}
+
+@keyframes pulseGlow{
+  0%{opacity:0.2;}
+  50%{opacity:0.6;}
+  100%{opacity:0.2;}
+}
+
+/* Card Title */
+.guideline-box h3{
+  font-size:22px;
+  color:white;
+  text-shadow:0 0 10px red;
+  margin-bottom:15px;
+}
+
+/* Guideline List */
+.guideline-box ol{
+  padding-left:18px;
+  font-size:16px;
+  color:#dddddd;
+  line-height:1.7;
+}
+
+.guideline-box li{
+  margin-bottom:8px;
+}
+
+/* Divider Line Between Cards */
+.divider{
+  width:3px;
+  background:linear-gradient(red, black);
+  box-shadow:0 0 30px red;
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width:900px){
+  .guidelines-content{
+    flex-direction:column;
+    align-items:center;
+  }
+
+  .divider{
+    width:100%;
+    height:3px;
+    margin:40px 0;
+  }
+
+  .guideline-box{
+    width:100%;
+  }
+}
+/* ================= PRIZES SECTION ================= */
+.prizes-section{
+  padding:120px 10%;
+  text-align:center;
+  
+}
+
+/* Title */
+.prizes-title{
+  font-family:'Nosifer', cursive;
+  font-size:50px;
+  color:#e50914;
+  text-shadow:0 0 30px red;
+  margin-bottom:60px;
+}
+
+/* Event Title */
+.prize-event-title{
+  font-family:'Montserrat', sans-serif;
+  font-size:28px;
+  color:white;
+  margin:50px 0 30px;
+  text-shadow:0 0 10px red;
+}
+
+/* Prize Cards Container */
+.prize-container{
+  display:flex;
+  justify-content:center;
+  align-items:flex-end;
+  gap:50px;
+  flex-wrap:wrap;
+  margin-bottom:60px;
+}
+
+/* Common Prize Card */
+.prize-card{
+  width:220px;
+  height:220px;
+  background:black;
+  border-radius:20px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  font-family:'Montserrat', sans-serif;
+  border:2px solid #111;
+  transition:0.4s;
+  position:relative;
+  box-shadow:0 0 20px rgba(255,0,0,0.2);
+}
+
+/* Rank Text */
+.prize-card .rank{
+  font-size:14px;
+  letter-spacing:2px;
+  color:#ccc;
+  margin-bottom:10px;
+}
+
+/* Prize Amount */
+.prize-card h2{
+  font-size:36px;
+  font-weight:800;
+  color:white;
+  text-shadow:0 0 10px red;
+}
+
+/* 🥇 First Prize Glow */
+.prize-card.first{
+  border:2px solid red;
+  box-shadow:0 0 30px red;
+}
+
+.prize-card.first:hover{
+  box-shadow:0 0 60px red;
+  transform:scale(1.1);
+}
+
+/* 🥈 Second Prize Glow */
+.prize-card.second{
+  border:2px solid red;
+  box-shadow:0 0 25px red;
+}
+
+.prize-card.second:hover{
+  box-shadow:0 0 50px red;
+  transform:scale(1.05);
+}
+
+/* 🥉 Third Prize Glow */
+.prize-card.third{
+  border:2px solid red;
+  box-shadow:0 0 25px red;
+}
+
+.prize-card.third:hover{
+  box-shadow:0 0 50px red;
+  transform:scale(1.05);
+}
+
+/* Floating Neon Base */
+.prize-card::after{
+  content:"";
+  position:absolute;
+  bottom:-15px;
+  width:80%;
+  height:12px;
+  background:rgba(255,0,0,0.4);
+  filter:blur(10px);
+  border-radius:50%;
+}
+
+/* Mobile Responsive */
+@media(max-width:900px){
+  .prize-container{
+    flex-direction:column;
+    align-items:center;
+  }
+}
+/* ================= COORDINATORS SECTION ================= */
+.coordinator-section{
+  padding:120px 10%;
+  text-align:center;
+  
+}
+
+/* Title */
+.coordinator-title{
+  font-family:'Nosifer', cursive;
+  font-size:50px;
+  color:#e50914;
+  text-shadow:0 0 30px red;
+  margin-bottom:20px;
+}
+
+/* Student Coordinators */
+.student-title{
+  font-family:'Montserrat', sans-serif;
+  font-size:24px;
+  color:white;
+  text-shadow:0 0 10px red;
+  margin-top:20px;
+}
+
+.student-list{
+  color:#ccc;
+  font-size:16px;
+  margin-bottom:60px;
+}
+
+/* Container */
+.coordinator-container{
+  display:flex;
+  justify-content:center;
+  gap:50px;
+  flex-wrap:wrap;
+}
+
+/* Coordinator Card */
+.coordinator-card{
+  width:260px;
+  padding:30px;
+  background:black;
+  border-radius:18px;
+  text-align:center;
+  font-family:'Montserrat', sans-serif;
+  border:2px solid #111;
+  box-shadow:0 0 20px rgba(255,0,0,0.2);
+  transition:0.4s;
+}
+
+/* Name */
+.coordinator-card h3{
+  font-size:20px;
+  color:white;
+  text-shadow:0 0 10px red;
+  margin-bottom:10px;
+}
+
+/* Department */
+.coordinator-card .dept{
+  font-size:14px;
+  color:#ffaaaa;
+  margin-bottom:5px;
+}
+
+/* Role */
+.coordinator-card .role{
+  font-size:16px;
+  font-weight:bold;
+  color:white;
+}
+
+/* Glow Effects */
+.red-glow{
+  border:2px solid red;
+  box-shadow:0 0 25px red;
+}
+
+.purple-glow{
+  border:2px solid red;
+  box-shadow:0 0 25px red;
+}
+
+.blue-glow{
+  border:2px solid red;
+  box-shadow:0 0 25px red;
+}
+
+/* Hover Animation */
+.coordinator-card:hover{
+  transform:scale(1.08);
+  box-shadow:0 0 50px red;
+  background:linear-gradient(135deg,#ff0000,#3b0000);
+}
+
+/* Mobile Responsive */
+@media(max-width:900px){
+  .coordinator-container{
+    flex-direction:column;
+    align-items:center;
+  }
+}
+
+/* Screen Shake Animation */
+@keyframes screenShake {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  10% { transform: translate(-5px, -5px) rotate(-0.5deg); }
+  20% { transform: translate(5px, 5px) rotate(0.5deg); }
+  30% { transform: translate(-5px, 5px) rotate(-0.5deg); }
+  40% { transform: translate(5px, -5px) rotate(0.5deg); }
+  50% { transform: translate(-3px, 3px) rotate(-0.3deg); }
+  60% { transform: translate(3px, -3px) rotate(0.3deg); }
+  70% { transform: translate(-2px, 2px) rotate(-0.2deg); }
+  80% { transform: translate(2px, -2px) rotate(0.2deg); }
+  90% { transform: translate(-1px, 1px) rotate(-0.1deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+/* Shake Class */
+.shake {
+  animation: screenShake 0.6s ease-in-out;
+}
+

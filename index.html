@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kreativ'26 Stranger Things Symposium</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Nosifer&family=Cinzel:wght@400;600;800&family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Particles -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+
+<body>
+
+<!-- Background Music -->
+<audio id="bgm" loop>
+  <source src="theme.mp3" type="audio/mp3">
+</audio>
+
+<!-- Particles Container -->
+<div id="particles-js"></div>
+
+<!-- Upside Down Button -->
+<button onclick="toggleUpsideDown()">Upside Down Mode 👁️</button>
+
+
+
+
+
+
+<!-- Navbar -->
+<nav>
+  <div class="logo">Kreativ'26</div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#guidelines">Guidelines</a></li>
+    <li><a href="#prizes">Prizes</a></li>
+    <li><a href="#coordinators">Coordinator</a></li>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <h1>KREATIV'26</h1>
+  <h3 class="tech-gamma">TECH GAMMA</h3>
+  <p class="college">KAMARAJ COLLEGE OF ENGINEERING AND TECHNOLOGY</p>
+
+  <h2>National Level<br>Technical Symposium</h2>
+  <p class="tagline">Innovate • Collaborate • Elevate</p>
+
+  <div>
+    <a href="#events">
+    <button class="btn-outline" id="events">View Events</button>
+    </a>
+    <button class="btn-main" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScF_OQCPkNiXZ2ATPzucRO2tKIzzRlDf49zeqHIDNUaqQWIkg/viewform', '_blank')">
+  Register Now
+</button>
+
+  </div>
+
+  
+
+  <div class="controls">
+    <button class="btn-outline" onclick="toggleUpsideDown()">Upside Down Mode 👁️</button>
+    
+  </div>
+</section>
+<section id="events" class="events-section">
+  <h2 class="events-title">Events</h2>
+
+  <div class="events-container">
+
+    <!-- TECHNICAL EVENT -->
+    <div class="event-card stranger-gradient">
+      <h3>TechMorph</h3>
+      <p class="event-type">Technical Event</p>
+      <p>Decode, Design, and Battle with real-world technical challenges.</p>
+      <p><b>Round 1:</b> System Thinking & Architecture Design</p>
+      <p><b>Round 2:</b> Constrain-Based Problem Solving</p>
+
+      
+    </div>
+
+    <!-- NON TECHNICAL EVENT -->
+    <div class="event-card stranger-glass">
+      <h3>Minutes To Win</h3>
+      <p class="event-type">Non-Technical Event</p>
+
+      <p><b>Round 1:</b> Preliminary</p>
+      <p><b>Round 2:</b> Team Challenge</p>
+    </div>
+
+  </div>
+</section>
+<section id="guidelines" class="guidelines-section">
+
+  <h2 class="guidelines-title">Guidelines</h2>
+
+  <!-- TIMELINE -->
+  <div class="timeline-vertical">
+
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <span>9:30 - 10:00</span>
+        <h3>Orientation</h3>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="timeline-content">
+        <span>10:00 - 10:30</span>
+        <h3>Refreshments</h3>
+      </div>
+    </div>
+
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <span>10:30 - 1:00</span>
+        <h3>Hackathon (Project Evaluation)</h3>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="timeline-content">
+        <span>1:00 - 2:00</span>
+        <h3>Lunch Break</h3>
+      </div>
+    </div>
+
+    <div class="timeline-item left">
+      <div class="timeline-content">
+        <span>2:00 - 3:00</span>
+        <h3>Non-Technical Events</h3>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="timeline-content">
+        <span>3:00 - 4:30</span>
+        <h3>Prize Distribution</h3>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<div class="guidelines-content">
+
+  <div class="guideline-box">
+    <h3>TechMorph (Technical Event) Guidelines</h3>
+    <ol>
+      <li>Participation is team-based only; individual participation is not allowed and each participant may join only one team.</li>
+      <li>Teams must follow the given problem statements, constraints, and time limits strictly in all rounds.</li>
+      <li>Plagiarism, malpractice, or use of unfair means will lead to immediate disqualification.</li>
+      <li>The judges’ and organizing committee’s decisions are final and binding.</li>
+      
+    </ol>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="guideline-box">
+    <h3>Minutes To Win (Non-Technical) Guidelines</h3>
+    <ol>
+      <li>Participants must display fair play, coordination, and discipline throughout all rounds.</li>
+      <li>Time limits and task instructions must be followed strictly for each activity.</li>
+      <li>Any form of misconduct or rule violation will result in disqualification.</li>
+      <li>Team rankings will be based on accuracy, performance, and completion time, and judges’ decisions are final.</li>
+      
+    </ol>
+  </div>
+
+</div>
+
+
+</section>
+<section id="prizes" class="prizes-section">
+  <h2 class="prizes-title">Prizes</h2>
+
+  <div class="prize-container">
+    <div class="prize-card">
+      <h3>Participation Certificate</h3>
+      <p>All participants will receive participation certificates.</p>
+    </div>
+
+    <div class="prize-card">
+      <h3>Winner Certificate</h3>
+      <p>Winners will receive merit certificates and cash prizes.</p>
+    </div>
+  </div>
+</section>
+
+<section id="prizes" class="prizes-section">
+  <h2 class="prizes-title">Prizes</h2>
+
+  <!-- TECHNICAL EVENT -->
+  <h3 class="prize-event-title">TechMorph (Technical Event)</h3>
+
+  <div class="podium-container">
+
+  <!-- 2nd Place -->
+  <div class="podium-card second">
+    <p class="rank">RUNNER UP</p>
+    <h2>₹2000</h2>
+  </div>
+
+  <!-- 1st Place (Center Winner) -->
+  <div class="podium-card first">
+    <p class="rank">CHAMPION</p>
+    <h2>₹3000</h2>
+  </div>
+
+  <!-- 3rd Place -->
+  <div class="podium-card third">
+    <p class="rank">2ND RUNNER UP</p>
+    <h2>₹1000</h2>
+  </div>
+
+</div>
+
+
+  </div>
+
+  <!-- NON TECH EVENT -->
+  <h3 class="prize-event-title">Minutes To Win (Non-Technical Event)</h3>
+
+  <div class="prize-container">
+
+    <div class="prize-card first">
+      <p class="rank">Winner</p>
+      <h2>₹1000</h2>
+    </div>
+
+    <div class="prize-card second">
+      <p class="rank">Runner Up</p>
+      <h2>₹500</h2>
+    </div>
+
+  </div>
+
+</section>
+<section id="coordinators" class="coordinator-section">
+
+  <h2 class="coordinator-title">Coordinators</h2>
+
+  <h3 class="student-title">Student Coordinators</h3>
+  <p class="student-list">
+    Hari Sanjay - 9360407277<br>
+    Sajeetha - 8248231872
+  </p>
+
+  <div class="coordinator-container">
+
+    <!-- Staff Coordinator -->
+    <div class="coordinator-card red-glow">
+      <h3>Mr. S. Ram Prasath</h3>
+      <p class="dept">AP - CSE</p>
+      <p class="role">Staff Coordinator</p>
+    </div>
+
+    <!-- Convener -->
+    <div class="coordinator-card purple-glow">
+      <h3>Dr. A. Meenakshi</h3>
+      <p class="dept">Professor & HOD</p>
+      <p class="role">Convener</p>
+    </div>
+
+    <!-- Principal -->
+    <div class="coordinator-card blue-glow">
+      <h3>Dr. S. Senthil</h3>
+      <p class="dept">Principal</p>
+      <p class="role">Chief Patron</p>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
+
+
+
