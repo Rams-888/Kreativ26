@@ -1,27 +1,24 @@
 /* ================= AUTO BACKGROUND MUSIC ================= */
 
 // Try to play music when page loads
-window.onload = function () {
+window.addEventListener("load", () => {
   const music = document.getElementById("bgm");
-  if (!music) return;
-
-  music.volume = 0.4;   // Volume (0.0 to 1.0)
+  music.volume = 0.4;
   music.loop = true;
 
-  // Try autoplay (may be blocked by browser)
+  // Try autoplay
   music.play().catch(() => {
     console.log("Autoplay blocked. Waiting for user interaction...");
   });
-};
+});
 
-// Play music automatically when user clicks anywhere (browser policy trick)
-document.addEventListener("click", function () {
+// Force play after first user interaction
+document.addEventListener("click", () => {
   const music = document.getElementById("bgm");
-  if (music) {
-    music.volume = 0.4;
-    music.play();
-  }
+  music.volume = 0.4;
+  music.play();
 }, { once: true });
+
 
 
 /* ================= UPSIDE DOWN MODE ================= */
@@ -125,6 +122,7 @@ function removeParticles() {
   const container = document.getElementById("particles-js");
   container.innerHTML = ""; // stop particles
 }
+
 
 
 
