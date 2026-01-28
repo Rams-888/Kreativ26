@@ -27,8 +27,8 @@ document.addEventListener("click", function () {
 /* ================= UPSIDE DOWN MODE ================= */
 
 // Background images
-let normalBg = "ST1.jpg";
-let upsideBg = "ST2.jpg";
+let normalBg = "ST001.jpg";
+let upsideBg = "ST002.jpg";
 // Set default background
 document.body.style.backgroundImage = `url('${normalBg}')`;
 
@@ -125,6 +125,7 @@ function removeParticles() {
   const container = document.getElementById("particles-js");
   container.innerHTML = ""; // stop particles
 }
+
 
 
 
