@@ -27,9 +27,8 @@ document.addEventListener("click", function () {
 /* ================= UPSIDE DOWN MODE ================= */
 
 // Background images
-let normalBg = "https://i.pinimg.com/736x/ad/fa/90/adfa9038637d682605387725a6fa94df.jpg";
-let upsideBg = "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bc8a3e51-68fd-4e99-89c6-1857948d8544/diotf5j-41356b08-0013-47a2-b6e7-3c415a68c4ca.png/v1/fill/w_1194,h_669,q_70,strp/the_upside_down__stranger_things_unveiled_by_inkimagine_diotf5j-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzE4IiwicGF0aCI6IlwvZlwvYmM4YTNlNTEtNjhmZC00ZTk5LTg5YzYtMTg1Nzk0OGQ4NTQ0XC9kaW90ZjVqLTQxMzU2YjA4LTAwMTMtNDdhMi1iNmU3LTNjNDE1YTY4YzRjYS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.3JfnsmhHYfrvrn1XJZeEysRrNSxgFf78Z-OJUAuU21g";
-
+let normalBg = "ST1.jpg";
+let upsideBg = "ST2.jpg";
 // Set default background
 document.body.style.backgroundImage = `url('${normalBg}')`;
 
@@ -126,5 +125,6 @@ function removeParticles() {
   const container = document.getElementById("particles-js");
   container.innerHTML = ""; // stop particles
 }
+
 
 
