@@ -92,7 +92,7 @@ nav ul li a:hover{
   justify-content:center;
   align-items:center;
   text-align:center;
-  padding-top:80px;
+  padding-top: 160px;
 }
 
 /* Main Title */
@@ -1220,6 +1220,45 @@ body.upside .last-date-box{
 body.shake {
   animation: shake 0.5s;
 }
+/* College Bar Below Navbar */
+.college-bar{
+  position: fixed;
+  top: 55px; /* below navbar */
+  width: 100%;
+  text-align: center;
+  background: rgba(0,0,0,0.6);
+  padding: 8px 0;
+  z-index: 999;
+  backdrop-filter: blur(4px);
+}
+
+/* College Name */
+.college-name{
+  font-family: 'Cinzel', serif;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+/* Department Name */
+.dept-name{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #ffb3b3;
+  letter-spacing: 1px;
+}
+
+/* Proudly Organizes */
+.organizes{
+  font-family: 'Nosifer', cursive;
+  font-size: 18px;
+  color: red;
+  text-shadow: 0 0 10px red, 0 0 30px red;
+  margin-top: 3px;
+}
+
+
 
 
 
