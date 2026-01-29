@@ -7,16 +7,15 @@
 
 /* ================= BODY ================= */
 /* Normal Background */
-body {
+body{
   background: url("ST001.jpg") no-repeat center center fixed;
-  background-size: cover;
-  transition: background-image 1s ease, transform 0.5s ease;
+  background-size: contain; /* NOT cover to avoid zoom */
+  transition: background-image 1s ease-in-out;
 }
 
-/* Upside Down Background */
-body.upside {
+body.upside{
   background: url("ST002.jpg") no-repeat center center fixed;
-  background-size: cover;
+  background-size: contain;
 }
 
 
@@ -1189,5 +1188,6 @@ body{
   background-position: center;
   background-attachment: scroll; /* IMPORTANT for mobile */
 }
+
 
 
