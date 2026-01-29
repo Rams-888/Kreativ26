@@ -1,24 +1,27 @@
 /* ================= AUTO BACKGROUND MUSIC ================= */
 
 // Try to play music when page loads
-window.addEventListener("load", () => {
+window.onload = function () {
   const music = document.getElementById("bgm");
-  music.volume = 0.4;
+  if (!music) return;
+
+  music.volume = 0.4;   // Volume (0.0 to 1.0)
   music.loop = true;
 
-  // Try autoplay
+  // Try autoplay (may be blocked by browser)
   music.play().catch(() => {
     console.log("Autoplay blocked. Waiting for user interaction...");
   });
-});
+};
 
-// Force play after first user interaction
-document.addEventListener("click", () => {
+// Play music automatically when user clicks anywhere (browser policy trick)
+document.addEventListener("click", function () {
   const music = document.getElementById("bgm");
-  music.volume = 0.4;
-  music.play();
+  if (music) {
+    music.volume = 0.4;
+    music.play();
+  }
 }, { once: true });
-
 
 
 /* ================= UPSIDE DOWN MODE ================= */
@@ -26,6 +29,7 @@ document.addEventListener("click", () => {
 // Background images
 let normalBg = "ST001.jpg";
 let upsideBg = "ST002.jpg";
+
 // Set default background
 document.body.style.backgroundImage = `url('${normalBg}')`;
 
@@ -122,8 +126,8 @@ function removeParticles() {
   const container = document.getElementById("particles-js");
   container.innerHTML = ""; // stop particles
 }
-
-
-
+function toggleUpsideDown() {
+  document.body.classList.toggle("upside");
+}
 
 
