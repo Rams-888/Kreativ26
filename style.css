@@ -22,6 +22,11 @@ body.upside{
   background: url("ST002.jpg") no-repeat center center fixed;
   background-size: cover;
 }
+ul, li {
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
 
 
 
@@ -1272,6 +1277,7 @@ body.shake {
   text-shadow: 0 0 10px red, 0 0 30px red;
   margin-top: 3px;
 }
+
 
 
 
