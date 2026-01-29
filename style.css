@@ -308,6 +308,15 @@ button{
   text-shadow:0 0 20px red;
   margin-bottom:80px;
 }
+.guideline-box ol {
+  list-style: decimal !important;
+  padding-left: 20px;
+}
+
+.guideline-box li {
+  margin-bottom: 8px;
+}
+
 
 /* Timeline Container */
 .timeline-vertical{
@@ -1277,6 +1286,7 @@ body.shake {
   text-shadow: 0 0 10px red, 0 0 30px red;
   margin-top: 3px;
 }
+
 
 
 
