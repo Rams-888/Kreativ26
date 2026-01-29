@@ -46,7 +46,6 @@ nav{
   padding:12px 40px;
   position:fixed;
   top:0;
-  left:0;
   width:100%;
   background:black;
   border-bottom:2px solid #e50914;
@@ -1272,6 +1271,7 @@ body.shake {
   text-shadow: 0 0 10px red, 0 0 30px red;
   margin-top: 3px;
 }
+
 
 
 
