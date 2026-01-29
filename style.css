@@ -6,22 +6,19 @@
 }
 
 /* ================= BODY ================= */
-body{  
-  font-family: 'Cinzel', serif;
-  color:white;
- 
-
-  
+/* Normal Background */
+body {
+  background: url("images/normal-bg.jpg") no-repeat center center fixed;
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  transition: background-image 1s ease-in-out, filter 1s ease;
-
-
- 
- 
-  overflow-x:hidden;
+  transition: background-image 1s ease, transform 0.5s ease;
 }
+
+/* Upside Down Background */
+body.upside {
+  background: url("images/upside-bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
 
 
 
@@ -1192,3 +1189,4 @@ body{
   background-position: center;
   background-attachment: scroll; /* IMPORTANT for mobile */
 }
+
