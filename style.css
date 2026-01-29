@@ -1022,3 +1022,173 @@ body.upside .last-date-box{
 .cup-img{
   animation: trophyGlow 2s infinite;
 }
+
+/* ================= MOBILE RESPONSIVE FIX ================= */
+
+/* Tablets */
+@media (max-width: 1024px){
+  .hero h1{
+    font-size: 60px;
+  }
+
+  .hero h2{
+    font-size: 36px;
+  }
+
+  nav{
+    padding: 10px 20px;
+  }
+}
+
+
+/* Phones */
+@media (max-width: 768px){
+
+  /* Navbar */
+  nav ul{
+    display:none; /* hide menu */
+  }
+
+  .logo{
+    font-size:18px;
+  }
+
+  /* Hero Section */
+  .hero{
+    padding: 120px 20px 60px;
+    height:auto;
+  }
+
+  .hero h1{
+    font-size: 45px;
+  }
+
+  .hero h2{
+    font-size: 26px;
+  }
+
+  .tech-gamma{
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  .college{
+    font-size: 12px;
+    text-align:center;
+  }
+
+  button{
+    width: 100%;
+    max-width: 250px;
+  }
+
+  /* Events Cards */
+  .events-container{
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .event-card{
+    width:100%;
+  }
+
+  /* Guidelines Timeline */
+  .timeline-vertical::before{
+    left:10px;
+  }
+
+  .timeline-item{
+    width:100%;
+    padding-left:40px;
+    text-align:left;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right{
+    left:0;
+  }
+
+  .timeline-item::before{
+    left:0;
+  }
+
+  /* Guideline Cards */
+  .guidelines-content{
+    flex-direction:column;
+    gap:30px;
+  }
+
+  .guideline-box{
+    width:100%;
+  }
+
+  .divider{
+    width:100%;
+    height:3px;
+  }
+
+  /* Podium Prizes */
+  .podium-container{
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+  }
+
+  .podium-card{
+    width:90%;
+    height:auto;
+    transform:none !important;
+  }
+
+  /* Prize Cards */
+  .prize-container{
+    flex-direction:column;
+  }
+
+  .prize-card{
+    width:100%;
+  }
+
+  /* Coordinators */
+  .coordinator-container{
+    flex-direction:column;
+    gap:20px;
+  }
+
+  .coordinator-card{
+    width:100%;
+  }
+}
+
+
+/* Small Phones (Very Small Screens) */
+@media (max-width: 480px){
+
+  .hero h1{
+    font-size: 38px;
+  }
+
+  .hero h2{
+    font-size: 22px;
+  }
+
+  .events-title,
+  .guidelines-title,
+  .prizes-title,
+  .coordinator-title{
+    font-size: 32px;
+  }
+
+  .podium-card h2{
+    font-size: 28px;
+  }
+}
+body.upside{
+  transform: rotateX(180deg);
+  transform-origin: center;
+}
+body{
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll; /* IMPORTANT for mobile */
+}
