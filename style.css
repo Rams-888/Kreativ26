@@ -1179,15 +1179,7 @@ body.upside .last-date-box{
     font-size: 28px;
   }
 }
-body.upside{
-  transform: rotateX(180deg);
-  transform-origin: center;
-}
-body{
-  background-size: cover;
-  background-position: center;
-  background-attachment: scroll; /* IMPORTANT for mobile */
-}
+
 @keyframes shake {
   0% { transform: translate(0,0); }
   20% { transform: translate(-10px,5px); }
@@ -1200,6 +1192,7 @@ body{
 body.shake {
   animation: shake 0.5s;
 }
+
 
 
 
