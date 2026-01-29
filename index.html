@@ -61,6 +61,9 @@
     <button class="btn-main" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScF_OQCPkNiXZ2ATPzucRO2tKIzzRlDf49zeqHIDNUaqQWIkg/viewform', '_blank')">
   Register Now
 </button>
+    
+  
+</div>
 
   </div>
 
@@ -70,6 +73,9 @@
     <button class="btn-outline" onclick="toggleUpsideDown()">Upside Down Mode 👁️</button>
     
   </div>
+  <div id="lastDateBox" class="last-date-box">
+  LAST DATE TO REGISTER : <span>11 FEB 2026</span>
+</div>
 </section>
 <section id="events" class="events-section">
   <h2 class="events-title">Events</h2>
@@ -108,7 +114,7 @@
     <div class="timeline-item left">
       <div class="timeline-content">
         <span>9:30 - 10:00</span>
-        <h3>Inauguration</h3>
+        <h3>Orientation</h3>
       </div>
     </div>
 
@@ -122,7 +128,7 @@
     <div class="timeline-item left">
       <div class="timeline-content">
         <span>10:30 - 1:00</span>
-        <h3>TechMorph</h3>
+        <h3>Hackathon (Project Evaluation)</h3>
       </div>
     </div>
 
@@ -136,14 +142,14 @@
     <div class="timeline-item left">
       <div class="timeline-content">
         <span>2:00 - 3:00</span>
-        <h3>Minutes To Win</h3>
+        <h3>Non-Technical Events</h3>
       </div>
     </div>
 
     <div class="timeline-item right">
       <div class="timeline-content">
         <span>3:00 - 4:30</span>
-        <h3>Valedictory</h3>
+        <h3>Prize Distribution</h3>
       </div>
     </div>
 
@@ -204,23 +210,29 @@
 
   <div class="podium-container">
 
-  <!-- 2nd Place -->
+  <!-- Runner Up -->
   <div class="podium-card second">
     <p class="rank">RUNNER UP</p>
     <h2>₹2000</h2>
+    
   </div>
 
-  <!-- 1st Place (Center Winner) -->
+  <!-- Champion -->
   <div class="podium-card first">
     <p class="rank">CHAMPION</p>
     <h2>₹3000</h2>
+    <img src="cup.png" class="cup-img">
   </div>
 
-  <!-- 3rd Place -->
+  <!-- 2nd Runner Up -->
   <div class="podium-card third">
     <p class="rank">2ND RUNNER UP</p>
     <h2>₹1000</h2>
+    
   </div>
+
+</div>
+
 
 </div>
 
@@ -249,34 +261,46 @@
 
   <h2 class="coordinator-title">Coordinators</h2>
 
-  <h3 class="student-title">Student Coordinators</h3>
-  <p class="student-list">
-    Hari Sanjay - 9360407277<br>
-    Sajeetha - 8248231872
-  </p>
+  <h3 class="student-title">Student Coordinators</h3><br>
+
+  <div class="student-container">
+    <div class="student-card">
+      <h3>S. Hari Sanjay</h3>
+      <p>📞 9360407277</p>
+    </div>
+
+    <div class="student-card">
+      <h3>R. Sajeetha</h3>
+      <p>📞 8248231872</p>
+    </div>
+  </div>
+
+
+  <h3 class="student-title">Staff Coordinators</h3><br>
 
   <div class="coordinator-container">
 
-    <!-- Staff Coordinator -->
-    <div class="coordinator-card red-glow">
+    <div class="coordinator-card">
       <h3>Mr. S. Ram Prasath</h3>
       <p class="dept">AP - CSE</p>
       <p class="role">Staff Coordinator</p>
     </div>
 
-    <!-- Convener -->
-    <div class="coordinator-card purple-glow">
+    <div class="coordinator-card">
       <h3>Dr. A. Meenakshi</h3>
       <p class="dept">Professor & HOD</p>
       <p class="role">Convener</p>
     </div>
 
-    <!-- Principal -->
-    <div class="coordinator-card blue-glow">
+    <div class="coordinator-card">
       <h3>Dr. S. Senthil</h3>
       <p class="dept">Principal</p>
       <p class="role">Chief Patron</p>
     </div>
+
+  </div>
+
+</section>
 
   </div>
 
@@ -292,8 +316,6 @@
 
 </body>
 </html>
-
-
 
 
 
