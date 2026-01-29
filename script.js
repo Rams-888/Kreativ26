@@ -35,24 +35,22 @@ document.body.style.backgroundImage = `url('${normalBg}')`;
 let upsideActive = false;
 
 function toggleUpsideDown() {
-  upsideActive = !upsideActive;
   document.body.classList.toggle("upside");
 
-  // Change Background
-  if (upsideActive) {
-    document.body.style.backgroundImage = `url('${upsideBg}')`;
-    loadParticles();
-  } else {
-    document.body.style.backgroundImage = `url('${normalBg}')`;
-    removeParticles();
-  }
-
-  // SCREEN SHAKE EFFECT
+  // Screen Shake
   document.body.classList.add("shake");
   setTimeout(() => {
     document.body.classList.remove("shake");
   }, 600);
+
+  // Particles
+  if (document.body.classList.contains("upside")) {
+    loadParticles();
+  } else {
+    removeParticles();
+  }
 }
+
 
 
 
@@ -126,22 +124,5 @@ function removeParticles() {
   container.innerHTML = ""; // stop particles
 }
 
-function toggleUpsideDown() {
 
-  // Toggle class
-  document.body.classList.toggle("upside");
-
-  // Screen Shake
-  document.body.classList.add("shake");
-  setTimeout(() => {
-    document.body.classList.remove("shake");
-  }, 500);
-
-  // Particles ON only in upside
-  if (document.body.classList.contains("upside")) {
-    loadParticles();
-  } else {
-    removeParticles();
-  }
-}
 
