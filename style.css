@@ -9,13 +9,15 @@
 /* Normal Background */
 body{
   background: url("ST001.jpg") no-repeat center center fixed;
-  background-size: contain; /* NOT cover to avoid zoom */
+  background-size: cover; /* IMPORTANT */
+  background-position: center;
+  background-attachment: fixed;
   transition: background-image 1s ease-in-out;
 }
 
 body.upside{
   background: url("ST002.jpg") no-repeat center center fixed;
-  background-size: contain;
+  background-size: cover;
 }
 
 
@@ -1192,6 +1194,7 @@ body.upside .last-date-box{
 body.shake {
   animation: shake 0.5s;
 }
+
 
 
 
