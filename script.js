@@ -30,26 +30,34 @@ document.addEventListener("click", function () {
 
 
 // Set default background
-document.body.style.backgroundImage = `url('${normalBg}')`;
+let normalBg = "ST001.jpg";
+let upsideBg = "ST002.jpg";
 
 let upsideActive = false;
 
+// Set default background
+document.body.style.backgroundImage = `url('${normalBg}')`;
+
 function toggleUpsideDown() {
+  upsideActive = !upsideActive;
   document.body.classList.toggle("upside");
+
+  // Change background image
+  if (upsideActive) {
+    document.body.style.backgroundImage = `url('${upsideBg}')`;
+    loadParticles();
+  } else {
+    document.body.style.backgroundImage = `url('${normalBg}')`;
+    removeParticles();
+  }
 
   // Screen Shake
   document.body.classList.add("shake");
   setTimeout(() => {
     document.body.classList.remove("shake");
   }, 600);
-
-  // Particles
-  if (document.body.classList.contains("upside")) {
-    loadParticles();
-  } else {
-    removeParticles();
-  }
 }
+
 
 
 
@@ -123,6 +131,7 @@ function removeParticles() {
   const container = document.getElementById("particles-js");
   container.innerHTML = ""; // stop particles
 }
+
 
 
 
