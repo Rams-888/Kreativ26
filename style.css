@@ -99,7 +99,7 @@ nav ul li a:hover{
   justify-content:center;
   align-items:center;
   text-align:center;
-  padding-top: 50px;
+  padding-top: 0px;
 }
 
 /* Main Title */
@@ -1271,6 +1271,7 @@ body.shake {
   text-shadow: 0 0 10px red, 0 0 30px red;
   margin-top: 3px;
 }
+
 
 
 
