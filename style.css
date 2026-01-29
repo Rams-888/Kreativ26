@@ -54,6 +54,7 @@ nav{
 
 /* Menu Right */
 nav ul{
+  list-style: none; 
   display:flex;
   gap:30px;
   margin-left:auto; /* FORCE RIGHT */
@@ -1271,6 +1272,7 @@ body.shake {
   text-shadow: 0 0 10px red, 0 0 30px red;
   margin-top: 3px;
 }
+
 
 
 
