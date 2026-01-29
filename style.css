@@ -556,6 +556,30 @@ body.upside #particles-js{
   display: block;
 }
 
+/* Student & Staff Subtitle */
+.coord-subtitle{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  color: white;
+  text-align: center;
+  margin: 40px 0 20px;
+  letter-spacing: 3px;
+  text-shadow: 0 0 10px red, 0 0 30px red;
+  position: relative;
+}
+
+/* Red Glow Underline */
+.coord-subtitle::after{
+  content:"";
+  display:block;
+  width:180px;
+  height:3px;
+  background:red;
+  margin:10px auto 0;
+  box-shadow:0 0 20px red;
+}
+
+
 
 /* ================= MOBILE RESPONSIVE ================= */
 @media(max-width:900px){
@@ -1194,6 +1218,7 @@ body.upside .last-date-box{
 body.shake {
   animation: shake 0.5s;
 }
+
 
 
 
