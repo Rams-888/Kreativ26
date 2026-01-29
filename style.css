@@ -10,6 +10,7 @@
 body{
   font-family: 'Cinzel', serif;
   color:white;
+  padding-top: 90px;
   background: url("ST001.jpg") no-repeat center center fixed;
   background-size: cover; /* IMPORTANT */
   background-position: center;
@@ -1223,6 +1224,7 @@ body.shake {
 /* College Bar Below Navbar */
 .college-bar{
   position: fixed;
+  top: 80px;
   top: 55px; /* below navbar */
   width: 100%;
   text-align: center;
@@ -1265,6 +1267,7 @@ body.shake {
   text-shadow: 0 0 10px red, 0 0 30px red;
   margin-top: 3px;
 }
+
 
 
 
