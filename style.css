@@ -8,6 +8,8 @@
 /* ================= BODY ================= */
 /* Normal Background */
 body{
+  font-family: 'Cinzel', serif;
+  color:white;
   background: url("ST001.jpg") no-repeat center center fixed;
   background-size: cover; /* IMPORTANT */
   background-position: center;
@@ -1218,6 +1220,7 @@ body.upside .last-date-box{
 body.shake {
   animation: shake 0.5s;
 }
+
 
 
 
