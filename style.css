@@ -8,14 +8,14 @@
 /* ================= BODY ================= */
 /* Normal Background */
 body {
-  background: url("images/normal-bg.jpg") no-repeat center center fixed;
+  background: url("ST001.jpg") no-repeat center center fixed;
   background-size: cover;
   transition: background-image 1s ease, transform 0.5s ease;
 }
 
 /* Upside Down Background */
 body.upside {
-  background: url("images/upside-bg.jpg") no-repeat center center fixed;
+  background: url("ST002.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -1189,4 +1189,5 @@ body{
   background-position: center;
   background-attachment: scroll; /* IMPORTANT for mobile */
 }
+
 
