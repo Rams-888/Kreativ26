@@ -27,8 +27,7 @@ document.addEventListener("click", function () {
 /* ================= UPSIDE DOWN MODE ================= */
 
 // Background images
-let normalBg = "ST001.jpg";
-let upsideBg = "ST002.jpg";
+
 
 // Set default background
 document.body.style.backgroundImage = `url('${normalBg}')`;
@@ -126,8 +125,23 @@ function removeParticles() {
   const container = document.getElementById("particles-js");
   container.innerHTML = ""; // stop particles
 }
-function toggleUpsideDown() {
-  document.body.classList.toggle("upside");
-}
 
+function toggleUpsideDown() {
+
+  // Toggle class
+  document.body.classList.toggle("upside");
+
+  // Screen Shake
+  document.body.classList.add("shake");
+  setTimeout(() => {
+    document.body.classList.remove("shake");
+  }, 500);
+
+  // Particles ON only in upside
+  if (document.body.classList.contains("upside")) {
+    loadParticles();
+  } else {
+    removeParticles();
+  }
+}
 
